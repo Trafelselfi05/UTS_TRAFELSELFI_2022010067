@@ -145,7 +145,7 @@ if (isset($_POST['bayar'])) {
     $totalBayar = $_POST['totalBayar'];
     $datePesanan = date("Y-m-d");
 
-    if ($totalBayar > $totalBelanja) {
+    if ($totalBayar >= $totalBelanja) {
         // simpan data
         $query = mysqli_query($conn, "INSERT INTO pemesan (tanggal_pemesan, total_harga, total_bayar)
                             VALUES
