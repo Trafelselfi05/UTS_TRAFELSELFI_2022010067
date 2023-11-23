@@ -38,12 +38,12 @@ foreach ($result as $row) {
                     <tr>
                         <td>Admin</td>
                         <td> : </td>
-                        <td>Muhammad Ediefanto</td>
+                        <td>Selfi</td>
                     </tr>
                     <tr>
                         <td>Alamat</td>
                         <td>:</td>
-                        <td>Jln. Getassrabi Kebangsan </td>
+                        <td>Buaran </td>
                     </tr>
                 </table>
             </div>
