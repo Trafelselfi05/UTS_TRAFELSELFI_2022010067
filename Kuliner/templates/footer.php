@@ -8,7 +8,7 @@
         <div class="col-md-4">
             <h2>Projects</h2>
             <small>PHP</small><br>
-            <small>Java Script</small><br>
+            <small>JQuery</small><br>
             <small>BootStrap V.5.3</small><br>
         </div>
     </div>

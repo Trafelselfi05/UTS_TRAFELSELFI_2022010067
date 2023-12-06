@@ -1,24 +1,30 @@
 <?php
+// fetch_product.php
+
+// Kode untuk menghubungkan ke database
 include("../db/conn.php");
 
-if (isset($_GET['id_produk'])) {
-    $id_produk = $_GET['id_produk'];
+// Mendapatkan ID produk dari permintaan AJAX
+$id_produk = $_GET['id'];
 
-    // Query ke database untuk mendapatkan data produk berdasarkan id
-    $query = "SELECT * FROM produk WHERE id_produk = '$id_produk'";
-    $result = mysqli_query($conn, $query);
+// Query untuk mengambil data produk berdasarkan ID
+$query = "SELECT * FROM produk WHERE id_produk = '$id_produk'";
+$result = mysqli_query($conn, $query);
 
-    if (mysqli_num_rows($result) > 0) {
-        $produk = mysqli_fetch_assoc($result);
+// Mengecek apakah data produk ditemukan
+if (mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);
 
-        // Mengonversi data produk menjadi format JSON dan mengirimkannya sebagai respons
-        header('Content-Type: application/json');
-        echo json_encode($produk);
-    } else {
-        echo "Produk tidak ditemukan.";
-    }
+    // Mengirimkan data produk dalam format JSON
+    echo json_encode([
+        'Response' => 'True',
+        'product' => $row
+    ]);
 } else {
-    echo "ID Produk tidak ditemukan.";
+    // Jika produk tidak ditemukan
+    echo json_encode([
+        'Response' => 'False',
+        'message' => 'Produk tidak ditemukan'
+    ]);
 }
-
-mysqli_close($conn);
+?>

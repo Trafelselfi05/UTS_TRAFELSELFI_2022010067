@@ -11,32 +11,29 @@ if (empty($_SESSION['pesanan']) || !isset($_SESSION['pesanan'])) {
     echo "<script>location= 'index.php'</script>";
 }
 ?>
-
+<link rel="stylesheet" href="../asset/css/home.css">
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="kotak">
+    <h1>Selamat Di Pusat Kuliner Kudus</h1>
+    <p>Dapatkan makanan favoritmu secara mudah disini <span class="fw-bold">Pusat Kulinerku</span><br>Kulineran terbaik
+        hanya ada dipusat KulinerKu
+    </p>
+</div>
+        </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="./asset/img/Kuliner.jpg" class="d-block w-100" style="height: 400px;">
-            <div class="carousel-caption d-none d-md-block">
-                <div class="row top-0">
-                    <div class="col">
-                        <h1>Selamat Datang Di Pusat Kuliner Kudus</h1>
-                        <p>Dapatkan makanan favoritmu secara mudah disini <span class="fw-bold">Pusat Kulinerku</span>
-                        </p>
-                        <hr class="fw-bold">
-                        <p>Kulineran terbaik hanya ada dipusat KulinerKu</p>
-                    </div>
-                </div>
-            </div>
+            <!-- <img src="./asset/img/Kuliner.jpg" class="d-block"> -->
+        </div>
+        <div class="carousel-item t-1">
+            <!-- <img src="./asset/img/makan.jpg" class="d-block"> -->
         </div>
         <div class="carousel-item">
-            <img src="./asset/img/makan.jpg" class="d-block w-100" style="height: 400px;">
-        </div>
-        <div class="carousel-item">
-            <img src="./asset/img/R.jpeg" class="d-block w-100" style="height: 400px;">
+            <!-- <img src="./asset/img/R.jpeg" class="d-block"> -->
         </div>
     </div>
+</div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

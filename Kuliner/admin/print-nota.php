@@ -33,7 +33,7 @@ foreach ($result as $row) {
     <div class="container mt-5">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-3">
-                <h1>STYLE <span class="fw-bold text-primary">SHOP</span></h1>
+                <h1>Pusat <span class="fw-bold text-primary">Kulinerku</span></h1>
                 <table>
                     <tr>
                         <td>Admin</td>
